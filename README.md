@@ -1,4 +1,4 @@
-This is the website for [Corbin Davenport](https://corbin.io), built with [Eleventy](https://www.11ty.dev/) and hosted on GitHub Pages. There is [a blog post](https://blog.corbin.io/post/752757825366835200/how-i-made-my-new-personal-website) about how it works.
+This is the website for Arol Wright. It is based on [Corbin Davenport](https://corbin.io)'s website, built with [Eleventy](https://www.11ty.dev/) and hosted on GitHub Pages.
 
 How to run locally:
 
