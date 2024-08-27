@@ -4,20 +4,22 @@ title: Contact Me
 permalink: "contact/index.html"
 ---
 
-# Contact Me 📬
+# Reach out!
 
-Need to reach me? Send me an email.
+If you want to reach out to me, here are some options. 🙌
 
-**How-To Geek email for feedback, pitches, corrections:**
+## Contract my services
 
-📧 [corbin at howtogeek.com](mailto:corbin@howtogeek.com)
+Need a writer, copywriter, or editor for your website? I'm your guy—I have lots of proven experience and I can most likely put out some bangers for your audience. Reach out to the following address:
 
-**Personal email for anything else:** 
+📧 [hire@arolwright.com](mailto:hire@arolwright.com)
 
-📧 [corbindavenport at outlook.com](mailto:corbindavenport@outlook.com)
+You can also connect with me, and reach out through, [LinkedIn](https://www.linkedin.com/in/arolwright/).
 
-**Signal for sensitive information:**
+## PR, feedback, pitches, and corrections
 
-💬 [Contact on Signal](https://signal.me/#eu/6BeaCHcI1FXI4wC8yJJVxWkqY3LeFjEQVm8VVLJcfH_CMtpoUNRNDbDJJkLjwb8p)
+If you work in press and you want to establish a link with me or my employer, or if you want to throw any feedback at me/have a correction on something I wrote and published, reach out to the following address:
 
-Please do not send the same email to multiple addresses.
+📧 [me@arolwright.com](mailto:me@arolwright.com)
+
+Please note that I don't usually respond to messages sent through social media, so if you need an urgent answer, you should email me to the address above.
