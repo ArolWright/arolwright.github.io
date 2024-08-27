@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: Corbin Davenport
+title: Arol Wright
 ---
 
 # Hello there!
