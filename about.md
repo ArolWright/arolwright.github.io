@@ -8,11 +8,11 @@ permalink: "about/index.html"
 
 {% photo %}
 
-Since 2017, I have worked as a tech journalist at several websites. I currently work for [How-To Geek](https://www.howtogeek.com/author/arolwright/) as a News Writer. Previously, I used to work at [Android Police](https://androidpolice.com/author/arol-wright), [MakeUseOf](https://www.makeuseof.com/author/arol-wright), and [XDA-Developers](https://www.makeuseof.com/author/arol-wright). Writing about technology has always been a dream job for me, and I am grateful for the opportunity to make a living from it. You can look through my [LinkedIn](https://www.linkedin.com/in/arolwright/) if you want to know more about my work history in detail.
+Since 2017, I have worked as a freelance tech journalist at several websites. I currently work for [How-To Geek](https://www.howtogeek.com/author/arolwright/) as a News Writer, where I have worked since August 2022. Previously, I used to work at [Android Police](https://androidpolice.com/author/arol-wright), [MakeUseOf](https://www.makeuseof.com/author/arol-wright), and [XDA-Developers](https://www.makeuseof.com/author/arol-wright). Writing about technology has always been a dream job for me, and I am grateful for the opportunity to make a living from it. You can look through my [LinkedIn](https://www.linkedin.com/in/arolwright/) if you want to know more about my work history in detail.
 
 I'm Venezuelan-American and I currently live in Caracas, Venezuela. People would usually describe me as a pretty nice guy.
 
-[I run a side gig](https://www.instagram.com/equipo.ccs) selling football/soccer jerseys in Venezuela.
+I speak Spanish and English natively, and I want to learn a few additional languages.
 
 ### My tech
 
@@ -35,6 +35,4 @@ I'm not much on social media, but if you want to follow me somewhere, here are s
 
 ### About this website
 
-This website was made using a template by Corbin Davenport, which he made for his own personal website, built with Eleventy, and hosted on GitHub Pages. Full credits to him for putting this together.
-
-It is completely open-source—here is the [source code](https://github.com/ArolWright/arolwright.github.io) for this specific website, as well as Corbin's [original source code](https://github.com/corbindavenport/corbindavenport.github.io). You can also check out his [blog post](https://blog.corbin.io/post/752757825366835200/how-i-made-my-new-personal-website) on his personal blog, where he explains how he put this together.
+This website is based on a template made by Corbin Davenport. Find the original source code [here](https://github.com/corbindavenport/corbindavenport.github.io).
