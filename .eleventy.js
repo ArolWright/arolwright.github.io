@@ -26,7 +26,7 @@ module.exports = function (eleventyConfig) {
     });
     // Profile picture shortcode
     eleventyConfig.addShortcode("photo", function (url) {
-        return `<img alt="Photo of Corbin" class="profile-photo" src="https://www.gravatar.com/avatar/bd4dc9257737f89e59f71b4851fc1b74?s=500">`
+        return `<img alt="Photo of Arol" class="profile-photo" src="https://www.gravatar.com/avatar/7e45f50667c4ed988aee238bab4fb7a03449ad993c42e230317afaa1417c6140?s=500">`
     });
     // Redirect shortcode
     eleventyConfig.addShortcode("redirect", function (url) {
