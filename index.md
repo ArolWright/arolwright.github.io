@@ -3,8 +3,8 @@ layout: layout.njk
 title: Corbin Davenport
 ---
 
-# Hi, I'm Corbin 👋
+# Hello there!
 
-I'm a tech journalist currently writing for [How-To Geek](https://www.howtogeek.com/author/corbindavenport/) and [The Spacebar](https://www.spacebar.news/). I'm also a software developer, and the host of the [Tech Tales podcast](https://techtalesshow.com/?utm_source=corbin.io).
+My name is Arol Wright, and I’m a tech journalist based out of Caracas, Venezuela. With seven years of experience writing about our everyday tech, my news articles, explainers, tutorials, and opinion pieces have reached millions of people.
 
-You can follow me on [Mastodon](https://toot.community/@corbin) and [Bluesky](https://bsky.app/profile/corbin.io). I also have [a blog](https://blog.corbin.io).
+I’m currently working as a news writer for _How-To Geek_.
