@@ -20,7 +20,7 @@ I speak Spanish and English natively, and I want to learn a few additional langu
 
 **Laptop:** 2023 M2 MacBook Air 15-Inch (16GB RAM, 256GB SSD)
 
-**Phone:** Samsung Galaxy S22 Ultra
+**Phone:** Google Pixel 9 Pro
 
 ### Profiles
 
