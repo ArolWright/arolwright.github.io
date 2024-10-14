@@ -22,6 +22,8 @@ I speak Spanish and English natively, and I want to learn a few additional langu
 
 **Phone:** Google Pixel 9 Pro
 
+**Other tech:** Google Pixel Watch 3 (41mm), Sony WF-1000XM5 Earbuds
+
 ### Profiles
 
 I'm not much on social media, but if you want to follow me somewhere, here are some links:
