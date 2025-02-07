@@ -92,13 +92,13 @@ nav ul li a {
     height: 40px;
     line-height: 40px;
     display: inline-block;
-    background: #FFF;
+    background: #424242;
     -webkit-border-radius: 10px;
     /* For older WebKit-based browsers */
     -moz-border-radius: 10px;
     /* For older Firefox browsers */
     border-radius: 10px;
-    color: #424242;
+    color: #FFF;
     padding: 0 30px;
     margin-bottom: 5px;
 }
@@ -220,6 +220,11 @@ a.btn-container img:hover {
     nav {
         background-color: #262626;
         color: #FAFAFA;
+    }
+
+    nav ul li a {
+        background: #FFF;
+        color: #424242;
     }
 
     a:hover,
