@@ -14,12 +14,15 @@
 
 /* Main styles */
 
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     background-color: #FAFAFA;
     color: #424242;
-    font-family: "Inter", "Geneva", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 21px;
     line-height: 30px;
 }
