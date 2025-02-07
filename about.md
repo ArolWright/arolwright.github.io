@@ -8,11 +8,11 @@ permalink: "about/index.html"
 
 {% photo %}
 
-Since 2017, I have worked as a freelance tech journalist at several websites. I currently work for [How-To Geek](https://www.howtogeek.com/author/arolwright/) as a News Writer, where I have worked since August 2022. Previously, I used to work at [Android Police](https://androidpolice.com/author/arol-wright), [MakeUseOf](https://www.makeuseof.com/author/arol-wright), and [XDA-Developers](https://www.makeuseof.com/author/arol-wright). Writing about technology has always been a dream job for me, and I am grateful for the opportunity to make a living from it. You can look through my [LinkedIn](https://www.linkedin.com/in/arolwright/) if you want to know more about my work history in detail.
+Since 2017, I have worked as a freelance tech journalist at multiple websites. I currently work for [How-To Geek](https://www.howtogeek.com/author/arolwright/) as a News Writer, where I have worked since August 2022. Previously, I used to work at [Android Police](https://androidpolice.com/author/arol-wright) from 2021 to 2023, [MakeUseOf](https://www.makeuseof.com/author/arol-wright) from 2021 to 2024, and [XDA-Developers](https://www.makeuseof.com/author/arol-wright) from 2017 to 2021. 
 
-I'm Venezuelan-American and I currently live in Caracas, Venezuela. People would usually describe me as a pretty nice guy.
+Writing about technology has always been a dream job for me. You can look through my [LinkedIn](https://www.linkedin.com/in/arolwright/) if you want to know more about my work history in detail.
 
-I speak Spanish and English natively, and I want to learn a few additional languages.
+People would usually describe me as a pretty nice guy. I speak Spanish and English natively, and I want to learn a few additional languages.
 
 ### My tech
 
