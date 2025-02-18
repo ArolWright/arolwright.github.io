@@ -8,11 +8,13 @@ permalink: "about/index.html"
 
 {% photo %}
 
-Since 2017, I have worked as a freelance tech journalist at multiple websites. I currently work for [How-To Geek](https://www.howtogeek.com/author/arolwright/) as a News Writer, where I have worked since August 2022. Previously, I used to work at [Android Police](https://androidpolice.com/author/arol-wright) from 2021 to 2023, [MakeUseOf](https://www.makeuseof.com/author/arol-wright) from 2021 to 2024, and [XDA-Developers](https://www.makeuseof.com/author/arol-wright) from 2017 to 2021. 
+I've been working as a freelance tech journalist since 2017, and it's been a fantastic ride.  I'm currently a senior writer at _[How-To Geek](https://www.howtogeek.com/author/arolwright/)_, which I joined in August 2022. 
 
-Writing about technology has always been a dream job for me. You can look through my [LinkedIn](https://www.linkedin.com/in/arolwright/) if you want to know more about my work history in detail.
+Before _How-To Geek_, I had the pleasure of contributing to some other awesome publications. I wrote for _[Android Police](https://androidpolice.com/author/arol-wright)_ from 2021 to 2023, for _[MakeUseOf](https://www.makeuseof.com/author/arol-wright)_ from 2021 to 2024, and got my start at _[XDA-Developers](https://www.xda-developers.com/author/arol-wright)_, where I wrote from 2017 to 2021. Each experience has helped me grow as a writer and deepen my understanding of the ever-changing tech landscape.
 
-People would usually describe me as a pretty nice guy. I speak Spanish and English natively, and I want to learn a few additional languages.
+Writing about technology has always been a passion of mine. If you're curious about the nitty-gritty details of my work history, feel free to check out my [LinkedIn](https://www.linkedin.com/in/arolwright/) profile—it's all there.
+
+Outside of the tech world, people have generally described me as a pretty laid-back and friendly guy. I'm a native speaker of both Spanish and English, and I'm always looking to expand my linguistic horizons. Some of my other passions include hitting the gym, learning how to do new stuff, and reading.
 
 ### My tech
 
