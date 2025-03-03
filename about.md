@@ -8,7 +8,7 @@ permalink: "about/index.html"
 
 {% photo %}
 
-I've been working as a freelance tech journalist since 2017, and it's been a fantastic ride.  I'm currently a senior writer at _[How-To Geek](https://www.howtogeek.com/author/arolwright/)_, which I joined in August 2022. 
+I've been working as a freelance tech journalist since 2017, and it's been a fantastic ride.  I currently contribute to _[How-To Geek](https://www.howtogeek.com/author/arolwright/)_ since August 2022. I also contribute to _The Mobile Report_ since March 2025.
 
 Before _How-To Geek_, I had the pleasure of contributing to some other awesome publications. I wrote for _[Android Police](https://androidpolice.com/author/arol-wright)_ from 2021 to 2023, for _[MakeUseOf](https://www.makeuseof.com/author/arol-wright)_ from 2021 to 2024, and got my start at _[XDA-Developers](https://www.xda-developers.com/author/arol-wright)_, where I wrote from 2017 to 2021. Each experience has helped me grow as a writer and deepen my understanding of the ever-changing tech landscape.
 
@@ -36,6 +36,18 @@ I'm not much on social media, but if you want to follow me somewhere, here are s
 - [GitHub](https://github.com/ArolWright/)
 - [TikTok](https://www.tiktok.com/@arolwright)
 - [Twitter/X](https://twitter.com/arolwright)
+- [Bluesky](https://bsky.app/profile/arolwright.bsky.social)
+
+Please note that if you want to contact me, the best way to do so is through my email—you can find it on the "contact me" section of the website.
+
+### Donate
+
+Did something I've written help you out? You can show your appreciation by donating.
+
+- Cash App: $ArolWright
+- Venmo: @ArolWright
+
+If you want to send something through other means, please send me an email.
 
 ### About this website
 
