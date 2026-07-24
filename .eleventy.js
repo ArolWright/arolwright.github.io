@@ -1,6 +1,4 @@
 
-const Parser = require('rss-parser');
-const parser = new Parser();
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
