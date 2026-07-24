@@ -20,15 +20,16 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addShortcode("redirect", function (url) {
         return `<p>You are being redirected...</p><meta http-equiv="refresh" content="0; url=${url}" />`
     });
-    // Set nofollow, noreferrer, noopener, and target blank attributes for all external links
-	eleventyConfig.addTransform("update-links", async function (content) {
+    // Set nofollow, noreferrer, noopener, and target blank attributes for all external links.
+    eleventyConfig.addTransform("update-links", async function (content) {
         const dom = new JSDOM(content);
-		dom.window.document.querySelectorAll('a').forEach(function (el) {
-            if (el.href.startsWith('https://') || el.href.startsWith('http://')) {
-                el.setAttribute('rel', 'nofollow noreferrer noopener');
-                el.setAttribute('target', '_blank');
+
+        dom.window.document.querySelectorAll("a").forEach(function (el) {
+            if (el.href.startsWith("https://") || el.href.startsWith("http://")) {
+                el.setAttribute("rel", "nofollow noreferrer noopener");
+                el.setAttribute("target", "_blank");
             }
         });
         return dom.serialize();
-	});
+    });
 };

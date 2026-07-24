@@ -1,57 +1,200 @@
-/* Animations */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap");
 
-@keyframes fadein {
-    from {
-        transform: translateY(-10px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+:root {
+    color-scheme: light;
+    --page: #f1f7f2;
+    --surface: rgba(255, 255, 255, 0.72);
+    --surface-solid: #fbfdfb;
+    --ink: #13251d;
+    --muted: #52665c;
+    --pine: #123c2a;
+    --green: #20734b;
+    --green-bright: #3fac70;
+    --mint: #bce8cc;
+    --lime: #d7f585;
+    --line: rgba(18, 60, 42, 0.14);
+    --shadow: 0 20px 60px rgba(23, 68, 48, 0.10);
+    --display: "Fraunces", Georgia, serif;
+    --body: "Manrope", "Segoe UI", sans-serif;
 }
 
-/* Main styles */
+* {
+    box-sizing: border-box;
+}
 
-/* Import Inter font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
 
 body {
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    background:
+        radial-gradient(circle at 8% 8%, rgba(188, 232, 204, 0.78), transparent 28rem),
+        radial-gradient(circle at 94% 32%, rgba(215, 245, 133, 0.28), transparent 26rem),
+        var(--page);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: clamp(1rem, 0.94rem + 0.2vw, 1.125rem);
+    line-height: 1.75;
+    text-rendering: optimizeLegibility;
+}
+
+body::before,
+body::after {
+    position: fixed;
+    z-index: -1;
+    border-radius: 999px;
+    content: "";
+    pointer-events: none;
+}
+
+body::before {
+    top: 22%;
+    left: -8rem;
+    width: 14rem;
+    height: 14rem;
+    border: 1px solid rgba(32, 115, 75, 0.12);
+    box-shadow:
+        0 0 0 2.5rem rgba(32, 115, 75, 0.025),
+        0 0 0 5rem rgba(32, 115, 75, 0.018);
+}
+
+body::after {
+    right: -6rem;
+    bottom: 4rem;
+    width: 18rem;
+    height: 18rem;
+    background: rgba(188, 232, 204, 0.2);
+    filter: blur(2px);
+    animation: ambient-drift 14s ease-in-out infinite alternate;
+}
+
+::selection {
+    background: var(--lime);
+    color: var(--pine);
+}
+
+.skip-link {
+    position: fixed;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 100;
+    padding: 0.65rem 1rem;
+    border-radius: 999px;
+    background: var(--pine);
+    color: white;
+    font-weight: 700;
+    transform: translateY(-160%);
+    transition: transform 180ms ease;
+}
+
+.skip-link:focus {
+    color: white;
+    transform: translateY(0);
+}
+
+.site-header {
+    position: relative;
+    z-index: 20;
+    padding: 1.4rem clamp(1rem, 4vw, 3rem) 0;
+    animation: header-in 600ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(100%, 920px);
+    min-height: 4.25rem;
+    margin: 0 auto;
+    padding: 0.55rem 0.7rem 0.55rem 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.66);
+    border-radius: 1.25rem;
+    background: var(--surface);
+    box-shadow: 0 12px 40px rgba(18, 60, 42, 0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+.wordmark {
+    color: var(--pine);
+    font-family: var(--display);
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.wordmark span {
+    color: var(--green-bright);
+}
+
+.wordmark:hover {
+    color: var(--green);
+}
+
+.site-nav ul {
+    display: flex;
+    gap: 0.2rem;
     margin: 0;
     padding: 0;
-    background-color: #EBEBFF;
-    color: #1B1B2F;
-    font-family: "Inter", sans-serif;
-    font-size: 21px;
-    line-height: 30px;
+    list-style: none;
+}
+
+.site-nav li {
+    margin: 0;
+}
+
+.site-nav li a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.8rem;
+    padding: 0 1rem;
+    border-radius: 0.85rem;
+    color: var(--muted);
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition:
+        color 180ms ease,
+        background-color 180ms ease,
+        transform 180ms ease;
+}
+
+.site-nav li a:hover {
+    background: rgba(188, 232, 204, 0.42);
+    color: var(--pine);
+    transform: translateY(-1px);
+}
+
+.site-nav li a[aria-current="page"] {
+    background: var(--pine);
+    color: white;
+    box-shadow: 0 7px 18px rgba(18, 60, 42, 0.2);
 }
 
 main {
-    display: block;
-    /* This is needed for IE and other old browsers */
+    position: relative;
+    display: flow-root;
+    width: min(calc(100% - 2rem), 920px);
+    min-height: 55vh;
     margin: 0 auto;
-    max-width: 870px;
-    padding: 15px 15px 50px 15px;
-    animation: fadein 0.5s;
+    padding: clamp(4.5rem, 9vw, 8rem) 0 clamp(4rem, 8vw, 7rem);
 }
 
-a {
-    color: #03A9F4;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-a:hover {
-    color: #01579B;
-    text-decoration: underline;
-}
-
-a,
-img {
-    /* Fix image and link outlines in legacy web browsers */
-    border: none;
-    outline: none;
+main::before {
+    display: block;
+    width: 3.5rem;
+    height: 0.35rem;
+    margin-bottom: 1.5rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--green), var(--lime));
+    content: "";
+    animation: accent-grow 700ms 120ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    transform-origin: left;
 }
 
 h1,
@@ -60,195 +203,314 @@ h3,
 h4,
 h5,
 h6 {
-    /* Fix broken line height on headers */
-    line-height: initial;
+    color: var(--pine);
+    font-family: var(--display);
+    font-weight: 600;
+    line-height: 1.1;
+    text-wrap: balance;
 }
 
-/* Navigation bar */
-
-nav {
-    display: block;
-    /* This is needed for IE and other old browsers */
-    font-size: 20px;
-    text-transform: lowercase;
-    font-weight: bold;
-    z-index: 10;
-    display: block;
-    padding: 40px;
-    margin-bottom: 40px;
+h1 {
+    max-width: 14ch;
+    margin: 0 0 1.6rem;
+    font-size: clamp(3.2rem, 8vw, 6.8rem);
+    letter-spacing: -0.03em;
+    word-spacing: 0.12em;
 }
 
-nav ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    text-align: center;
+h2 {
+    margin: 3.5rem 0 1rem;
+    font-size: clamp(2rem, 4.5vw, 3.25rem);
 }
 
-nav ul li {
-    display: inline;
-    list-style-type: none;
-    margin: 0 5px;
+h3 {
+    margin: 3rem 0 0.75rem;
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
 }
 
-nav ul li a {
-    height: 40px;
-    line-height: 40px;
-    display: inline-block;
-    background: #1b1b2f;
-    -webkit-border-radius: 10px;
-    /* For older WebKit-based browsers */
-    -moz-border-radius: 10px;
-    /* For older Firefox browsers */
-    border-radius: 10px;
-    color: #FFF;
-    padding: 0 30px;
-    margin-bottom: 5px;
+h4,
+h5,
+h6 {
+    margin: 2.25rem 0 0.75rem;
 }
 
-a:focus {
-    outline: 2px solid #03A9F4;
-    outline-offset: 2px;
-    transition: none;
+p,
+ul,
+ol {
+    max-width: 72ch;
+}
+
+p {
+    margin: 0 0 1.25rem;
+}
+
+main > p:first-of-type {
+    max-width: 62ch;
+    color: var(--muted);
+    font-size: clamp(1.12rem, 1rem + 0.55vw, 1.45rem);
+    line-height: 1.65;
+}
+
+strong {
+    color: var(--pine);
+    font-weight: 700;
+}
+
+em {
+    color: var(--green);
+}
+
+a {
+    color: var(--green);
+    font-weight: 600;
+    text-decoration-color: rgba(32, 115, 75, 0.35);
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.18em;
+    transition:
+        color 160ms ease,
+        text-decoration-color 160ms ease;
+}
+
+a:hover {
+    color: var(--pine);
+    text-decoration-color: var(--green-bright);
+}
+
+a:focus-visible,
+button:focus-visible {
+    border-radius: 0.3rem;
+    outline: 3px solid var(--green-bright);
+    outline-offset: 4px;
+}
+
+main ul,
+main ol {
+    margin: 1.25rem 0 2rem;
+    padding-left: 1.35rem;
+}
+
+main li {
+    margin: 0.55rem 0;
+    padding-left: 0.3rem;
+}
+
+main li::marker {
+    color: var(--green-bright);
+}
+
+main a[href^="mailto:"] {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin: 0.25rem 0;
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface-solid);
+    box-shadow: 0 8px 25px rgba(18, 60, 42, 0.06);
     text-decoration: none;
+    transition:
+        color 180ms ease,
+        border-color 180ms ease,
+        transform 180ms ease,
+        box-shadow 180ms ease;
 }
 
-nav ul li a:focus {
-    outline-offset: 0px;
-}
-
-nav ul li a:hover {
-    color: #03A9F4;
-    filter: drop-shadow(0px 3px 0px #03A9F4);
-    text-decoration: none;
-}
-
-a.btn-container img {
-    margin-right: 15px;
-    height: 60px;
-    width: auto;
-    border: 3px solid #424242;
-    -webkit-border-radius: 10px; /* For older WebKit-based browsers */
-    -moz-border-radius: 20px; /* For older Firefox browsers */
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-a.btn-container img:hover {
-    border-color: #03A9F4;
+main a[href^="mailto:"]:hover {
+    border-color: var(--green-bright);
+    box-shadow: 0 12px 30px rgba(18, 60, 42, 0.11);
+    transform: translateY(-2px);
 }
 
 .profile-photo {
     float: right;
+    width: clamp(9rem, 25vw, 14rem);
+    aspect-ratio: 1;
+    margin: 0.4rem 0 2rem clamp(1.5rem, 5vw, 3.5rem);
+    border: 0.5rem solid rgba(255, 255, 255, 0.78);
+    border-radius: 40% 60% 54% 46% / 46% 44% 56% 54%;
+    box-shadow:
+        0 0 0 1px var(--line),
+        var(--shadow);
+    object-fit: cover;
+    transition:
+        border-radius 500ms cubic-bezier(0.22, 1, 0.36, 1),
+        transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.profile-photo:hover {
     border-radius: 50%;
-    width: 25%;
-    margin: 0 0 25px 25px;
-    border: 3px solid #424242;
+    transform: rotate(2deg) scale(1.025);
 }
 
-/* Smaller desktop and tablet screens */
-
-@media screen and (max-width: 800px) {
-
-    body {
-        font-size: 18px;
-    }
-
-    nav {
-        margin-bottom: 20px;
-    }
-
+a.btn-container img {
+    width: auto;
+    height: 3.75rem;
+    margin-right: 0.75rem;
+    border: 2px solid var(--line);
+    border-radius: 0.85rem;
+    transition:
+        border-color 180ms ease,
+        transform 180ms ease;
 }
 
-/* Smaller screens in landscape mode */
+a.btn-container img:hover {
+    border-color: var(--green-bright);
+    transform: translateY(-2px);
+}
 
-@media screen and (max-height: 500px) {
+.has-motion [data-reveal] {
+    opacity: 0;
+    transform: translateY(1.25rem);
+    transition:
+        opacity 650ms var(--reveal-delay, 0ms) cubic-bezier(0.22, 1, 0.36, 1),
+        transform 650ms var(--reveal-delay, 0ms) cubic-bezier(0.22, 1, 0.36, 1);
+}
 
-    nav {
-        margin-bottom: 0;
+.has-motion [data-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes header-in {
+    from {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes accent-grow {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+@keyframes ambient-drift {
+    from {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+
+    to {
+        transform: translate3d(-2.5rem, -2rem, 0) scale(1.12);
+    }
+}
+
+@media (max-width: 680px) {
+    .site-header {
+        padding: 0.75rem 0.75rem 0;
+    }
+
+    .site-nav {
+        min-height: 3.75rem;
+        padding: 0.4rem 0.45rem 0.4rem 0.85rem;
+        border-radius: 1rem;
+    }
+
+    .wordmark {
+        font-size: 1.08rem;
+    }
+
+    .site-nav li a {
+        min-height: 2.5rem;
+        padding: 0 0.65rem;
+        font-size: 0.76rem;
     }
 
     main {
-        padding-top: 0;
+        width: min(calc(100% - 2.25rem), 920px);
+        padding-top: 4.5rem;
+    }
+
+    h1 {
+        font-size: clamp(2.8rem, 15vw, 4.8rem);
+    }
+
+    .profile-photo {
+        float: none;
+        display: block;
+        width: min(12rem, 60vw);
+        margin: 0 0 2.5rem;
     }
 
 }
 
-/* Compact screens */
-
-@media screen and (max-width: 600px) {
-
-    nav {
-        padding: 10px;
-        margin-bottom: 0;
+@media (max-width: 420px) {
+    .wordmark {
+        width: 2.25rem;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
-    nav ul {
-        text-align: left;
+    .site-nav li a {
+        padding: 0 0.55rem;
     }
-
-    nav ul li {
-        margin: 0 2px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-        height: 30px;
-        line-height: 30px;
-    }
-
-    .fickr-images a {
-        flex-grow: 1;
-        flex-basis: 40%;
-    }
-
 }
-
-/* Compact screens */
-
-@media screen and (max-width: 400px) {
-
-    .fickr-images a {
-        flex-grow: 1;
-        flex-basis: 70%;
-    }
-
-}
-
-/* Dark mode support */
 
 @media (prefers-color-scheme: dark) {
-
-    body,
-    nav {
-        background-color: #1B1B2F;
-        color: #FAFAFA;
+    :root {
+        color-scheme: dark;
+        --page: #071610;
+        --surface: rgba(16, 42, 31, 0.72);
+        --surface-solid: #102a1f;
+        --ink: #e9f5ed;
+        --muted: #a7bcb0;
+        --pine: #e5f7eb;
+        --green: #77d69e;
+        --green-bright: #66d394;
+        --mint: #1d573c;
+        --lime: #cce979;
+        --line: rgba(194, 230, 207, 0.16);
+        --shadow: 0 22px 70px rgba(0, 0, 0, 0.25);
     }
 
-    nav ul li a {
-        background: #FFF;
-        color: #424242;
+    body {
+        background:
+            radial-gradient(circle at 8% 8%, rgba(29, 87, 60, 0.52), transparent 28rem),
+            radial-gradient(circle at 94% 32%, rgba(121, 151, 55, 0.12), transparent 26rem),
+            var(--page);
     }
 
-    a:hover,
-    nav ul li a:hover {
-        color: #6565AE;
-        filter: drop-shadow(0px 3px 0px #6565AE);
+    .site-nav {
+        border-color: rgba(194, 230, 207, 0.1);
     }
 
+    .site-nav li a[aria-current="page"] {
+        background: var(--lime);
+        color: #10261c;
+    }
+
+    .profile-photo {
+        border-color: rgba(16, 42, 31, 0.8);
+    }
 }
 
-
-/* Disable animations on user request */
-
 @media (prefers-reduced-motion: reduce) {
-
-    main {
-        animation: none !important;
+    html {
+        scroll-behavior: auto;
     }
 
-    a {
-        transition: 0ms !important;
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
     }
 
+    .has-motion [data-reveal] {
+        opacity: 1;
+        transform: none;
+    }
 }

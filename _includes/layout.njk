@@ -36,21 +36,26 @@ title: Arol Wright
 </head>
 
 <body>
-	<nav>
-		<ul>
-			<li>
-				<a href="/">Home</a>
-			</li>
-			<li>
-				<a href="/about">About Me</a>
-			</li>
-			<li>
-				<a href="/contact">Contact Me</a>
-			</li>
-		</ul>
-	</nav>
+	<a class="skip-link" href="#main-content">Skip to content</a>
 
-	<main>
+	<header class="site-header">
+		<nav class="site-nav" aria-label="Primary navigation">
+			<a class="wordmark" href="/" aria-label="Arol Wright, home">Arol Wright<span aria-hidden="true">.</span></a>
+			<ul>
+				<li>
+					<a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a>
+				</li>
+				<li>
+					<a href="/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a>
+				</li>
+				<li>
+					<a href="/contact/"{% if page.url == "/contact/" %} aria-current="page"{% endif %}>Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="main-content" tabindex="-1">
 		{{ content | safe }}
 	</main>
 
